@@ -1,0 +1,605 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  width: 50px; 
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li{
+list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #a10707;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size: 62px;
+}
+
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover{
+  background: #0759a1;
+  transition: 1s;
+  border: 2px solid #fff;
+}
+
+/*----- vrstekač -----*/
+
+.course{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p{
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row{
+  margin: 5%;
+  display: flex;
+  justify-content: space-between
+}
+
+.course-col{
+  flex-basis: 31%;
+  background: #ccecff;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*------- campus ----*/
+
+.campus{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col img{
+  width: 100%;
+  display: block;
+}
+
+.layer{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover{
+  background: rgba(99, 183, 231, 0.7);
+}
+
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
+
+/*------- facilities ------*/
+
+.facilities{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.facilities-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilities-col p{
+  padding: 0;
+}
+
+.facilities-col h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/*------ testimonials -----*/
+
+.testimonials{
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.testimonial-col{
+  flex-basis:42%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #ccecff;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonial-col img{
+  height: 80px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 80%;
+}
+
+.testimonial-col p{
+  padding: 0;
+}
+
+.testimonial-col h3{
+  margin-top: 15px;
+  text-align: left;
+}
+
+/*----- call to action-----*/
+
+.cta{
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(11.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h1{
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+/*------footer------*/
+
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+span {
+  color: blue;
+}
+
+/*------ o spletni strani -----*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(ozadje.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+
+.sub-header h1{
+  margin-top: 100px;
+}
+
+.about-us{
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.about-col img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.about-col h1{
+  padding-top: 0;
+}
+
+.about-col p{
+  padding: 15px 0 25px;
+}
+
+.red-btn{
+  border: 3px solid #0759a1;
+  background: transparent;
+  color: #0759a1;
+}
+
+.red-btn:hover{
+  color: #fff;
+}
+
+/*--------značilnosti kač------*/
+
+.zna-header{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(vrske_kač.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.zna-header h1{
+  margin-top: 100px;
+}
+
+/*------koža------*/
+
+.koža{
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.koža img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+/*-----čutila----*/
+
+.about-col ol{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-col li{
+  margin-bottom: 2pxpx;
+}
+
+.čutila img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+/*------skelet kač------*/
+
+.about-col ul{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.skelet img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+/*------prehranjevanje------*/
+
+.pre-header{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(ozadje.2.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.pre-header h1{
+  margin-top: 100px;
+}
+
+/*----- prehranjevanje-------*/
+
+.prehranjevanje{
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.besedilo-left{
+  flex-basis: 65%;
+}
+
+.besedilo-left img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.besedilo-left h2{
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+.besedilo-left p{
+  color: #999;
+}
+
+/*--------tabele---------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+.tabela{
+  box-sizing: border-box; 
+  margin: 40px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.tabela_vrst{
+  max-width: 900px;
+  border: 1px solid #00bcd4;
+  background-color: #efefef33;
+  padding: 15px;
+  overflow: auto;
+  margin:auto ;
+  border-radius: 4px;
+}
+
+.tabela_vrst h2{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table{
+  width: 100%;
+  font-size: 13px;
+  color: #444;
+  white-space: nowrap;
+  border-collapse: collapse;
+}
+
+table>thead{
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+table>thead th{
+  padding: 15px;
+}
+
+table th,
+table td{
+  border: 1px solid #00000017;
+  padding: 10px 15px;
+}
+
+table>tbody>tr>td>img{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 6px #0003;
+}
+
+.action_btn{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.action_btn>a{
+  text-decoration: none;
+  color: #444;
+  background: #fff;
+  border: 1px solid orange;
+  display: inline-block;
+  padding: 7px 20px;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
+
+.action_btn>a:nth-child(1){
+  border-color: #26a69a
+}
+
+.action_btn>a:hover{
+  box-shadow: 0 3px 8px #0003;
+}
+
+table>tbody>tr{
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+table>tbody>tr:nth-child(even){
+  background-color: rgba(238,238,238 );
+}
+
+/*----svoje mnenje-------*/
+
+.comment-box{
+  border: 1px solid #ccc;
+  margin: 50px 0;
+  padding: 10px 20px;
+}
+
+.comment-box h3{
+  text-align: left;
+}
+
+.mnenje input, .mnenje textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+}
+
+.mnenje button{
+  margin: 10px 0;
+}
+
+/*-------miti okačah-------*/
+
+.miti-header{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(ozadje.3.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.miti-header h1{
+  margin-top: 100px;
+}
+
+/*------tropska hiša------*/
+
+.besedilo-left img{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+/*-------zemljevid------*/
+
+
+.location h5{
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+
+}
